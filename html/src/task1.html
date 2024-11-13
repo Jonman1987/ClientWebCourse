@@ -5,6 +5,48 @@
     <title>Task 1</title>
 </head>
 <body>
+<h1>Заполните форму</h1>
+<form action="/page2.html" method="post">
+    <p><label>
+        Ваше имя <input type="text" name="name" placeholder="Введите имя">
+    </label></p>
+
+    <p><label>
+        Обо мне <br><textarea name="aboutMe">Напишите пару предложений о себе</textarea>
+    </label></p>
+
+    <p>Ваши увлечения</p>
+    <p><label>
+        <input type="radio" value="programming" name="hobbies"> Программирование
+    </label>
+
+    <p><label>
+        <input type="radio" value="sport_gym" name="hobbies"> Спортзал
+    </label></p>
+
+    <p><label>
+        <input type="radio" value="traveling" name="hobbies"> Путешествия
+    </label></p>
+
+    <p>Какие языки программирования вы знаете?</p>
+    <p><label>
+        <input type="checkbox" value="c_c_plus" name="languages"> C\C++
+    </label></p>
+
+    <p><label>
+        <input type="checkbox" value="c_sharp" name="languages"> C#
+    </label></p>
+
+    <p><label>
+        <input type="checkbox" value="java" name="languages"> Java
+    </label></p>
+
+    <p><label>
+        <input type="checkbox" value="python" name="languages"> Python
+    </label></p>
+
+    <button type="submit">Отправить заявку</button>
+</form>
 
 </body>
 </html>
