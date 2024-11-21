@@ -1,0 +1,17 @@
+.blueText {
+color: #378db2;
+font-weight: 700;
+font-size: 1.2em;
+}
+
+.strikeText {
+text-decoration: line-through;
+}
+
+.body {
+  background-color: #feeed5;
+  width: 50vw;
+  height: 50vh;
+  font-family: sans-serif;
+  color: #676565;
+}
