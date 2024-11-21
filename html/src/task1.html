@@ -7,39 +7,61 @@
 <body>
 <h1>Заполните форму</h1>
 <form action="page2.html" method="post">
-    <p><label>
-        Ваше имя <input type="text" name="name" placeholder="Введите имя">
-    </label></p>
+    <p>
+        <label>
+            Ваше имя <input type="text" name="name" placeholder="Введите имя">
+        </label>
+    </p>
 
-    <p><label>
-        Обо мне <br><textarea name="aboutMe">Напишите пару предложений о себе</textarea>
-    </label></p>
+    <p>
+        <label>
+            Обо мне <br><textarea name="aboutMe">Напишите пару предложений о себе</textarea>
+        </label>
+    </p>
 
-    <p>Ваши увлечения</p>
-    <p><label>
-        <input type="radio" value="programming" name="hobbies"> Программирование
-    </label>
+    <p>
+        Ваши увлечения
+    </p>
 
-    <p><label>
-        <input type="radio" value="sport_gym" name="hobbies"> Спортзал
-    </label></p>
+    <p>
+        <label>
+            <input type="radio" value="programming" name="hobbies"> Программирование
+        </label>
+    </p>
 
-    <p><label>
-        <input type="radio" value="traveling" name="hobbies"> Путешествия
-    </label></p>
+    <p>
+        <label>
+            <input type="radio" value="sport_gym" name="hobbies"> Спортзал
+        </label>
+    </p>
 
-    <p>Какие языки программирования вы знаете?</p>
-    <p><label>
-        <input type="checkbox" value="c_c_plus" name="languages[]"> C\C++
-    </label></p>
+    <p>
+        <label>
+            <input type="radio" value="traveling" name="hobbies"> Путешествия
+        </label>
+    </p>
 
-    <p><label>
-        <input type="checkbox" value="c_sharp" name="languages[]"> C#
-    </label></p>
+    <p>
+        Какие языки программирования вы знаете?
+    </p>
 
-    <p><label>
-        <input type="checkbox" value="java" name="languages[]"> Java
-    </label></p>
+    <p>
+        <label>
+            <input type="checkbox" value="c_c_plus" name="languages[]"> C\C++
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" value="c_sharp" name="languages[]"> C#
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" value="java" name="languages[]"> Java
+        </label>
+    </p>
 
     <p>
         <label>
@@ -47,32 +69,44 @@
         </label>
     </p>
 
-    <p>Были ли вы в данных городах?</p>
-    <p><label>
-        <select size="3" multiple name="cities[]">
-            <option disabled>Выберете город</option>
-            <option selected value="nsk">Новосибирск</option>
-            <option value="msk">Москва</option>
-            <option value="smr">Самара</option>
-            <option value="rst">Ростов</option>
-        </select>
-    </label></p>
+    <p>
+        Были ли вы в данных городах?
+    </p>
 
-    <p>Ваша возрастная группа</p>
-    <p><label>
-        <select name="ages">
-            <option selected disabled>Выберете возрастную группу</option>
-            <option value="1">до 18</option>
-            <option value="2">18-25</option>
-            <option value="3">26-35</option>
-            <option value="4">Более 35</option>
-        </select>
-    </label></p>
+    <p>
+        <label>
+            <select size="3" multiple name="cities[]">
+                <option disabled>Выберете город</option>
+                <option selected value="nsk">Новосибирск</option>
+                <option value="msk">Москва</option>
+                <option value="smr">Самара</option>
+                <option value="rst">Ростов</option>
+            </select>
+        </label>
+    </p>
 
-    <button type="submit">Отправить заявку</button>
+    <p>
+        Ваша возрастная группа
+    </p>
+
+    <p>
+        <label>
+            <select name="ages">
+                <option selected disabled>Выберите возрастную группу</option>
+                <option value="1">до 18</option>
+                <option value="2">18-25</option>
+                <option value="3">26-35</option>
+                <option value="4">Более 35</option>
+            </select>
+        </label>
+    </p>
+
+    <button type="submit">
+        Отправить заявку
+    </button>
 </form>
-
-<p> <a href="page2.html">Вперед</a> </p>
-
+<p>
+    <a href="page2.html">Вперед</a>
+</p>
 </body>
 </html>
