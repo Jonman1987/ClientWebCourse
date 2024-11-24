@@ -1,17 +1,30 @@
 .blueText {
-color: #378db2;
-font-weight: 700;
-font-size: 1.2em;
+    color: #378db2;
+    font-weight: 700;
+    font-size: 1.0em;
 }
 
 .strikeText {
-text-decoration: line-through;
+    text-decoration: line-through;
 }
 
 .body {
-  background-color: #feeed5;
-  width: 50vw;
-  height: 50vh;
-  font-family: sans-serif;
-  color: #676565;
+    background-color: #feeed5;
+    width: 70vw;
+    height: 50vh;
+    font-family: sans-serif;
+    color: #676565;
+    font-size: 1.0em;
+    margin-left: 15px;
+    line-height: 1.0;
+}
+
+.highlighter {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.lihehtr{
+    line-height: 1.5;
+    text-indent: 15px;
 }
