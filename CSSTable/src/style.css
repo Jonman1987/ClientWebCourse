@@ -1,0 +1,48 @@
+.blueheadtable{
+    background-color:#3598db;
+    color:#e3ffff;
+    text-align: left;
+}
+
+th{
+    font-size: 20px;
+    font-weight: 150;
+    padding-left: 10px;
+    border-color: white;
+}
+
+td{
+    padding-left: 10px;
+    font-size: 20px;
+    border-color: lightgray;
+}
+
+.odd{
+    background-color:#eeeeee;
+}
+
+.even{
+    background-color:#ffffff;
+}
+
+table{
+    border-collapse: collapse;
+    font-family: sans-serif;
+    letter-spacing: 1.5px;
+}
+
+tr{
+    line-height: 52px;
+}
+
+.widtbl1{
+    width: 174px;
+}
+
+.widtbl2{
+    width: 300px;
+}
+
+.widtbl3{
+    width: 200px;
+}
