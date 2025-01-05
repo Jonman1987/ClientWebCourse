@@ -29,3 +29,21 @@ function sumOfOddNumbers() {
 function sumOdd() {
     console.log(sumOfOddNumbers(array));
 }sumOdd();
+
+function createArr() {
+    const array = [];
+
+    for (let i = 0; i <= 100; i++) {
+            array.push(i);
+        }
+
+    let result = array.map(num =>
+                     {
+                        if (num % 2 == 0)
+                        {
+                           return num * num;
+                        }
+                     }).filter(notUndefined => notUndefined !== undefined);
+
+    console.log(result);
+}createArr();
