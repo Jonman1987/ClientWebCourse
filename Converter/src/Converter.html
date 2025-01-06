@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Converter</title>
+    <script src = "script.js" defer></script>
+</head>
+<body>
+    <h1>КОНВЕРТЕР ТЕМПЕРАТУРЫ</h1>
+    <p>
+        <label>
+            Введите температуру в градусах <br><br><input type="text" name="degree" placeholder="Укажите температуру" id="inputZone">
+        </label>
+
+    </p>
+    <p>
+        <label>
+            Выберите операцию по переводу
+        </label>
+    </p>
+    <p>
+        <label>
+            <input type="radio" value="cel" name="scale" id="celRadio"> Перевести Цельсия в Кельвины
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="radio" value="cel" name="scale" id="kalRadio"> Перевести Кельвины в Цельсия
+        </label>
+    </p>
+    <p>
+        <label>
+            <h2>Результат:</h2>
+        </label>
+    </p>
+    <p>
+        <span hidden="true" id="result">
+            Результат
+        </span>
+    </p>
+    <button id="convert">
+        Конвертировать
+    </button>
+</body>
+</html>
