@@ -9,33 +9,17 @@
     <h1>КОНВЕРТЕР ТЕМПЕРАТУРЫ</h1>
     <p>
         <label>
-            Введите температуру в градусах <br><br><input type="text" name="degree" placeholder="Укажите температуру" id="inputZone">
+            Введите температуру в градусах Цельсия <br><br><input type="text" name="degree" placeholder="Укажите температуру" id="inputZone">
         </label>
 
     </p>
-    <p>
-        <label>
-            Выберите операцию по переводу
-        </label>
+    <p id="kal" hidden="true">
+        Результат в Кельвинах: <span hidden="true" id="resultKal">
+            Результат
+        </span>
     </p>
-    <p>
-        <label>
-            <input type="radio" value="cel" name="scale" id="celRadio"> Перевести Цельсия в Кельвины
-        </label>
-    </p>
-
-    <p>
-        <label>
-            <input type="radio" value="cel" name="scale" id="kalRadio"> Перевести Кельвины в Цельсия
-        </label>
-    </p>
-    <p>
-        <label>
-            <h2>Результат:</h2>
-        </label>
-    </p>
-    <p>
-        <span hidden="true" id="result">
+    <p id="fah" hidden="true">
+        Результат в Фаренгейтах: <span hidden="true" id="resultFah">
             Результат
         </span>
     </p>

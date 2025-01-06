@@ -4,9 +4,8 @@ function converter(){
     button.addEventListener("click", function(e) {
         let textForm = document.getElementById("inputZone");
         let textValue = textForm.value;
-        let celsiusRadioForm = document.getElementById("celRadio");
-        let kalvinRadioForm = document.getElementById("kalRadio");
-        let convertResult = 0;
+        let convertResultKal = 0;
+        let convertResultFah = 0;
 
         if(textValue == ""){
             alert("Вы не ввели значение температуры");
@@ -18,19 +17,18 @@ function converter(){
             return;
         }
 
-        if(celsiusRadioForm.checked != true && kalvinRadioForm.checked != true){
-            alert("Вы не выбрали операцию по переводу");
-            return;
-        }
+        convertResultKal = Number(textValue) + 273.15;
+        convertResultFah = Number(textValue) * 1.8 + 32;
 
-        if(celsiusRadioForm.checked == true){
-            convertResult = Number(textValue) + 273.15;
-        } else{
-            convertResult = Number(textValue) - 273.15;
-        }
-
-        let labelResult = document.getElementById("result");
-        labelResult.hidden = false;
-        labelResult.textContent = convertResult;
+        let textResultKal = document.getElementById("resultKal");
+        let textResultFah = document.getElementById("resultFah");
+        let labelKal = document.getElementById("kal");
+        let labelFah = document.getElementById("fah");
+        textResultKal.hidden = false;
+        textResultFah.hidden = false;
+        labelKal.hidden = false;
+        labelFah.hidden = false;
+        textResultKal.textContent = convertResultKal;
+        textResultFah.textContent = convertResultFah;
     });
 }converter();
