@@ -53,3 +53,31 @@ for (let i = 0; i < countries.Countries.length; i++) {
 
     console.log(countryName);
 }maxCities();
+
+function population() {
+    let sumPopulation = 0;
+    let newMapPopulation = 0;
+    let k = 0;
+
+    let objects = countries.Countries.map(function (num) {
+
+    for (let i = k; i < countries.Countries.length; i++) {
+        k++; // Если честно я тут накостылил, но пока не могу сообразить как правильно работает map.
+        // Я так понимаю, что должна быть какая-то типовая функция типа reduce которая делает суммирование
+
+        for (let j = 0; j < countries.Countries[i].Cities.length; j++) {
+            sumPopulation += countries.Countries[i].Cities[j].Population;
+            }
+
+            newMapPopulation = sumPopulation;
+            sumPopulation  = 0;
+
+            return {
+                      Name: countries.Countries[i].Name,
+                      Population: newMapPopulation
+                   }
+        }
+    });
+
+    console.log(objects);
+}population();
