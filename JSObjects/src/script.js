@@ -1,3 +1,5 @@
+window.ETR = window.ETR || {};
+
 let moscow = {
     Name: "Moscow",
     Population: 1000000
@@ -34,22 +36,20 @@ let Usa = {
 };
 
 const countries = {
-    Countries: [Russia, Usa]
+    Countries: [Usa, Russia]
 };
 
-function fff () {
-    let result = countries.map(function(elem ()
-                         {
-                            let name1 = "";
-                            let count = elem[0].Cities.length;
+function maxCities () {
 
-                            if (elem.Cities.length > count)
-                            {
-                               name1 = elem.Name;
-                            }
+let countryName = "No cities";
+let count = 0;
 
-                            return name1;
-                         })).filter(notUndefined => notUndefined !== undefined);
+for (let i = 0; i < countries.Countries.length; i++) {
+        if (countries.Countries[i].Cities.length > count) {
+            count = countries.Countries[i].Cities.length;
+            countryName = countries.Countries[i].Name;
+        }
+    }
 
-        console.log(result);
-}fff();
+    console.log(countryName);
+}maxCities();
