@@ -38,12 +38,12 @@ function createArr() {
         }
 
     let result = array.map(num =>
-                     {
-                        if (num % 2 == 0)
-                        {
-                           return num * num;
-                        }
-                     }).filter(notUndefined => notUndefined !== undefined);
+        {
+            if (num % 2 == 0)
+                {
+                   return num * num;
+                }
+        }).filter(notUndefined => notUndefined !== undefined);
 
     console.log(result);
 }createArr();
