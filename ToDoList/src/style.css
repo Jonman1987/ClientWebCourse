@@ -16,11 +16,24 @@
     display: none;
 }
 
+.sub-error-message {
+    color: #f00;
+    display: none;
+}
+
 .invalid {
     border: #f00 solid 1px;
 }
 
+.sub-invalid {
+    border: #f00 solid 1px;
+}
+
 .invalid ~ .error-message {
+    display: block;
+}
+
+.sub-invalid ~ .sub-error-message {
     display: block;
 }
 

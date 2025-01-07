@@ -38,11 +38,14 @@ document.addEventListener("DOMContentLoaded", function(){
                                <input class = "edit-todo-text-field" type = "text"></span>
                                <button class = "save-button" type = "button">Сохранить</button>
                                <button class = "cancel-button" type = "button">Отмена</button>
+                               <div class="sub-error-message">Необходимо задать значение</div>
                           </div>
                     `;
 
                     const editToDoTextField = newToDoItem.querySelector(".edit-todo-text-field");
                     editToDoTextField.value = newToDoText;
+
+                    const editField = document.getElementsByClassName("edit-todo-text-field");
 
                     newToDoItem.querySelector(".cancel-button").addEventListener("click", function(){
                         setViewMode();
@@ -52,11 +55,12 @@ document.addEventListener("DOMContentLoaded", function(){
                         const editedToDoText = editToDoTextField.value.trim();
 
                         if(editedToDoText.length === 0){
-                            newToDoTextField.classList.add("invalid");
+                            for(let i = 0; i < editField.length; i++){
+                                editField[i].classList.add("sub-invalid");
+                            }
+
                             return;
                         }
-
-                        newToDoTextField.classList.remove("invalid");
 
                         newToDoText = editedToDoText;
 
