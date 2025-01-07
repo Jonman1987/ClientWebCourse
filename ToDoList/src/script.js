@@ -66,6 +66,24 @@ document.addEventListener("DOMContentLoaded", function(){
 
                         setViewMode();
                     });
+
+                    newToDoItem.querySelector(".edit-todo-text-field").addEventListener('keydown', function(e) {
+                        if (e.keyCode === 13) {
+                            const editedToDoText = editToDoTextField.value.trim();
+
+                            if(editedToDoText.length === 0){
+                                    for(let i = 0; i < editField.length; i++){
+                                         editField[i].classList.add("sub-invalid");
+                                    }
+
+                                    return;
+                            }
+
+                            newToDoText = editedToDoText;
+
+                            setViewMode();
+                        }
+                    });
             });
         }
 
