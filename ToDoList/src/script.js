@@ -51,37 +51,29 @@ document.addEventListener("DOMContentLoaded", function(){
                         setViewMode();
                     });
 
-                    newToDoItem.querySelector(".save-button").addEventListener("click", function(){
+                    function editAction(){
                         const editedToDoText = editToDoTextField.value.trim();
 
                         if(editedToDoText.length === 0){
-                            for(let i = 0; i < editField.length; i++){
-                                editField[i].classList.add("sub-invalid");
-                            }
+                              for(let i = 0; i < editField.length; i++){
+                                   editField[i].classList.add("sub-invalid");
+                              }
 
-                            return;
+                                   return;
                         }
 
                         newToDoText = editedToDoText;
 
                         setViewMode();
+                    }
+
+                    newToDoItem.querySelector(".save-button").addEventListener("click", function(){
+                        editAction();
                     });
 
                     newToDoItem.querySelector(".edit-todo-text-field").addEventListener('keydown', function(e) {
                         if (e.keyCode === 13) {
-                            const editedToDoText = editToDoTextField.value.trim();
-
-                            if(editedToDoText.length === 0){
-                                    for(let i = 0; i < editField.length; i++){
-                                         editField[i].classList.add("sub-invalid");
-                                    }
-
-                                    return;
-                            }
-
-                            newToDoText = editedToDoText;
-
-                            setViewMode();
+                            editAction();
                         }
                     });
             });
